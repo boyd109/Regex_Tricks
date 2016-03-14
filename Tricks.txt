@@ -1,0 +1,39 @@
+
+
+This looks for files with multiple subfolders to the path
+http://www.calvertnet.k12.md.us/[a-z]+/[a-z]+/[a-z]+/[a-z]+/[a-z]+/([a-z]+).pdf
+
+This looks for a file with numbers or letters in the name
+http://www.calvertnet.k12.md.us/[a-z]+/[a-z]+/[a-z]+/([a-zA-Z0-9]+).jpg
+
+(?s)<tr>.+?<td>.+?<td><br>.+?</td>
+
+first letter until link: 
+F: (s?)[0-9a-zA-Z]+.+? h
+R: (s?).+? http
+
+Replacing something that is the text of an <a> tag with <p> tag
+F: (s?)<p>(.+?) <a href="(.+?)">(.+?)</a></p>
+R: <p>\2<a href="\3">\2</a></p>
+
+Example:
+<h3>Main Navigation Menu</h3>
+<p>Home <a href="http://hampshireschool.com/">http://hampshireschool.com/</a></p>
+<p>Elementary (K-4) <a href="http://hampshireschool.com/Elementary.html">http://hampshireschool.com/Elementary.html</a></p>
+<p>Middle School (5-8) <a href="http://hampshireschool.com/MiddleSchool.html">http://hampshireschool.com/MiddleSchool.html</a></p>
+<p>High School (9-12) <a href="http://hampshireschool.com/HighSchool.html">http://hampshireschool.com/HighSchool.html</a></p>
+<p>Sports and Clubs <a href="http://hampshireschool.com/SportsClubs.html">http://hampshireschool.com/SportsClubs.html</a></p>
+<h3>Upper Right Menu</h3>
+<p>Contact Us <a href="mailto:askus@hampshireschool.com">askus@hampshireschool.com</a></p>
+<p>Facebook <a href="https://www.facebook.com/#!/pages/Hampshire-Unit-School/417266365009607">https://www.facebook.com/#!/pages/Hampshire-Unit-School/417266365009607</a></p>
+
+Goes to: 
+<h3>Main Navigation Menu</h3>
+<p>Home<a href="http://hampshireschool.com/">Home</a></p>
+<p>Elementary (K-4)<a href="http://hampshireschool.com/Elementary.html">Elementary (K-4)</a></p>
+<p>Middle School (5-8)<a href="http://hampshireschool.com/MiddleSchool.html">Middle School (5-8)</a></p>
+<p>High School (9-12)<a href="http://hampshireschool.com/HighSchool.html">High School (9-12)</a></p>
+<p>Sports and Clubs<a href="http://hampshireschool.com/SportsClubs.html">Sports and Clubs</a></p>
+<h3>Upper Right Menu</h3>
+<p>Contact Us<a href="mailto:askus@hampshireschool.com">Contact Us</a></p>
+<p>Facebook<a href="https://www.facebook.com/#!/pages/Hampshire-Unit-School/417266365009607">Facebook</a></p>
