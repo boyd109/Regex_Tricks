@@ -3,10 +3,10 @@ Number is where the brackets go
 
 
 This looks for files with multiple subfolders to the path
-http://www.calvertnet.k12.md.us/[a-z]+/[a-z]+/[a-z]+/[a-z]+/[a-z]+/([a-z]+).pdf
+http://www.website.com/[a-z]+/[a-z]+/[a-z]+/[a-z]+/[a-z]+/([a-z]+).pdf
 
 This looks for a file with numbers or letters in the name
-http://www.calvertnet.k12.md.us/[a-z]+/[a-z]+/[a-z]+/([a-zA-Z0-9]+).jpg
+http://www.website.com/[a-z]+/[a-z]+/[a-z]+/([a-zA-Z0-9]+).jpg
 
 Getting half the right half of a table when it has a break in the second cell of each row:
 F: (?s)<tr>.+?<td>.+?<td><br>.+?</td>
