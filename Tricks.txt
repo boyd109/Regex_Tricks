@@ -18,26 +18,20 @@ R: (s?).+? http
 
 Replacing something that is the text of an <a> tag with <p> tag
 F: (s?)<p>(.+?) <a href="(.+?)">(.+?)</a></p>
-R: <p>\2<a href="\3">\2</a></p>
+R: <p><a href="\3">\2</a></p>
 
 Example:
 <h3>Main Navigation Menu</h3>
-<p>Home <a href="http://hampshireschool.com/">http://hampshireschool.com/</a></p>
-<p>Elementary (K-4) <a href="http://hampshireschool.com/Elementary.html">http://hampshireschool.com/Elementary.html</a></p>
-<p>Middle School (5-8) <a href="http://hampshireschool.com/MiddleSchool.html">http://hampshireschool.com/MiddleSchool.html</a></p>
-<p>High School (9-12) <a href="http://hampshireschool.com/HighSchool.html">http://hampshireschool.com/HighSchool.html</a></p>
-<p>Sports and Clubs <a href="http://hampshireschool.com/SportsClubs.html">http://hampshireschool.com/SportsClubs.html</a></p>
-<h3>Upper Right Menu</h3>
-<p>Contact Us <a href="mailto:askus@hampshireschool.com">askus@hampshireschool.com</a></p>
-<p>Facebook <a href="https://www.facebook.com/#!/pages/Hampshire-Unit-School/417266365009607">https://www.facebook.com/#!/pages/Hampshire-Unit-School/417266365009607</a></p>
+<p>Home <a href="school.com/">http://school.com/</a></p>
+<p>Elementary (K-4) <a href="http://Elementary.html">http://hampshireschool.com/Elementary.html</a></p>
+<p>Middle School (5-8) <a href="http://MiddleSchool.html">http://hampshireschool.com/MiddleSchool.html</a></p>
+<p>High School (9-12) <a href="http://HighSchool.html">http://hampshireschool.com/HighSchool.html</a></p>
+<p>Sports and Clubs <a href="http://SportsClubs.html">http://hampshireschool.com/SportsClubs.html</a></p>
 
 Goes to: 
 <h3>Main Navigation Menu</h3>
-<p>Home<a href="http://hampshireschool.com/">Home</a></p>
-<p>Elementary (K-4)<a href="http://hampshireschool.com/Elementary.html">Elementary (K-4)</a></p>
-<p>Middle School (5-8)<a href="http://hampshireschool.com/MiddleSchool.html">Middle School (5-8)</a></p>
-<p>High School (9-12)<a href="http://hampshireschool.com/HighSchool.html">High School (9-12)</a></p>
-<p>Sports and Clubs<a href="http://hampshireschool.com/SportsClubs.html">Sports and Clubs</a></p>
-<h3>Upper Right Menu</h3>
-<p>Contact Us<a href="mailto:askus@hampshireschool.com">Contact Us</a></p>
-<p>Facebook<a href="https://www.facebook.com/#!/pages/Hampshire-Unit-School/417266365009607">Facebook</a></p>
+<p><a href="school.com/">Home</a></p>
+<p><a href="http://Elementary.html">Elementary (K-4)</a></p>
+<p><a href="http://MiddleSchool.html">Middle School (5-8)</a></p>
+<p><a href="http://HighSchool.html">High School (9-12)</a></p>
+<p><a href="http://SportsClubs.html">Sports and Clubs</a></p>
