@@ -1,3 +1,5 @@
+() in whatever to keep, and in replace use /1
+Number is where the brackets go
 
 
 This looks for files with multiple subfolders to the path
