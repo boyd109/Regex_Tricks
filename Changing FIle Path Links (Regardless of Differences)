@@ -1,3 +1,8 @@
+Only pdf extensions: (Greedy, so it allows for .pdf in name)
+F: (?<=<a href=")(.+)/(.+\.pdf)
+R: path\2
+
+Where the "path" is the new filepath.
 
 Changes:
 <p><a href="oldpath213/15-16%20SY%20Calendar%202.pdf.pdf">2015-16 School Calendar</a></p>
@@ -10,13 +15,3 @@ To:
 <p><a href="path/ElemBellSched.pdf">Bell Schedule</a></p>
 <p><a href="path/FAQ_DressCode.pdf">Dress Code</a></p>
 <p><a href="facebook.com/10920">Facebook</a></p>
-
-This should work with all extensions, (if they put .pdf or other special characters in the name):
-F: (s?)href=".+/(.+?\..+)">
-
-Only pdf extensions: (Greedy, so it allows for .pdf in name)
-F:(s?)href=".+/(.+?\.[pdf]+)">
-
-R: href="filepath\2">
-
-Where the "filepath" is the new filepath.
