@@ -14,6 +14,9 @@ To:
 This should work with all extensions, (if they put .pdf or other special characters in the name):
 F: (s?)href=".+/(.+?\..+)">
 
+Only pdf extensions: (Greedy, so it allows for .pdf in name)
+F:(s?)href=".+/(.+?\.[pdf]+)">
+
 R: href="filepath\2">
 
 Where the "filepath" is the new filepath.
