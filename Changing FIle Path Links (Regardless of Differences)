@@ -1,0 +1,22 @@
+
+Changes:
+<p><a href="oldpath213/15-16%20SY%20Calendar%202.pdf.pdf">2015-16 School Calendar</a></p>
+<p><a href="oldpath1/ElemBellSched.pdf">Bell Schedule</a></p>
+<p><a href="oldpath2/FAQ_DressCode.pdf">Dress Code</a></p>
+<p><a href="facebook.com/10920">Facebook</a></p>
+
+To:
+<p><a href="newpath/pdf.pdf">2015-16 School Calendar</a></p>
+<p><a href="newpath/ElemBellSched.pdf">Bell Schedule</a></p>
+<p><a href="newpath/DressCode.pdf">Dress Code</a></p>
+<p><a href="facebook.com/10920">Facebook</a></p>
+
+Any extension (works as long as there is no dot extension (ex .pdf, .jpg) in the name that isn't acting as the file type:
+F: (s?)href=".+?([a-zA-Z0-9]+.[a-z]+)">
+
+Only pdf as ending:
+F: (s?)href=".+?(.+?.pdf)"> 
+
+R: href="filepath\2">
+
+Where the "filepath" is the new filepath.
