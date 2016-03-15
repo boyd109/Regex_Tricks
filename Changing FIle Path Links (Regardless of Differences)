@@ -11,7 +11,7 @@ To:
 <p><a href="newpath/DressCode.pdf">Dress Code</a></p>
 <p><a href="facebook.com/10920">Facebook</a></p>
 
-Any extension (works as long as there is no dot extension (ex .pdf, .jpg) in the name that isn't acting as the file type:
+Any extension (works as long as there is no dot extension (ex .pdf, .jpg) in the name that isn't acting as the file type (or special characters):
 F: (s?)href=".+?([a-zA-Z0-9]+.[a-z]+)">
 
 Only pdf as ending:
