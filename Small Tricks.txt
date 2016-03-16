@@ -19,5 +19,5 @@ This looks for a file with numbers or letters in the name
 http://www.website.com/[a-z]+/[a-z]+/[a-z]+/([a-zA-Z0-9]+).jpg
 
 Getting half the right half of a table when it has a break in the second cell of each row:
-F: (?s)<tr>.+?<td>.+?<td><br>.+?</td>
+F:
 R:
