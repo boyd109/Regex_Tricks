@@ -26,7 +26,11 @@ first letter until link:
 (s?).+? http
 .+(?=http)
 
+Removing hyperlinks from <a> tags
+(?<=<td>).+?">
+
 \w = [a-zA-Z0-9_]
+
 any number with decimals, scientific notation, etc.
 ^-?\d+(,\d+)*(\.\d+(e\d+)?)?$ 
 any name with periods:
