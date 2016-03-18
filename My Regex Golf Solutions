@@ -1,21 +1,21 @@
 Link: http://regex.alf.nu/
 
-Warmup:
+Warmup: (207)
 foo
 
-Anchors:
-
+Anchors: (206)
+ick$
 
 Ranges:
 
 
-Backrefs:
+Backrefs: (200)
 (.{3}).*\1
 
-Abba:
+Abba: (189)
+^(?!.*(.)(.)(\2)(\1))
 
-
-A man, a plan:
+A man, a plan: (167)
 (.)(.).*\2\1$
 
 Prime:
