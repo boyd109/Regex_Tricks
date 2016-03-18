@@ -8,9 +8,9 @@ something(?!) it is false that it is preceded by what is after the ?!
 (?<=)something it is true that whatever is in ?<= is before something
 (?!=)something it is false that whatever is in ?!= is before something
 
-first letter until link:
-(s?).+? http
-.+(?=http)
+something* looks for something and something with multiple occurances (last digit is quantified, and can be 0 occurances)
+
+# Code:
 
 This looks for files with multiple subfolders to the path
 http://www.website.com/[a-z]+/[a-z]+/[a-z]+/[a-z]+/[a-z]+/([a-z]+).pdf
@@ -22,3 +22,12 @@ Getting half the right half of a two column table when it has a break in the sec
 F: (?s)(?<=</td>)+.<td.+?</td>
 R: (nothing. The right side will be deleted)
 
+first letter until link:
+(s?).+? http
+.+(?=http)
+
+\w = [a-zA-Z0-9_]
+any number with decimals, scientific notation, etc.
+^-?\d+(,\d+)*(\.\d+(e\d+)?)?$ 
+any name with periods:
+^([\w\.]*)
