@@ -2,6 +2,10 @@ Only pdf extensions: (Greedy, so it allows for .pdf in name)
 F: (?<=<a href=")(.+)/(.+\.pdf)
 R: path\2
 
+For Pictures: (With extensions jpg, png, gif)
+F: (?<=src=")(.+)/(.+\.(jpg|png|gif))
+R: path\2
+
 Where the "path" is the new filepath.
 
 Changes:
