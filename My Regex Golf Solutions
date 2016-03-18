@@ -1,0 +1,49 @@
+Link: http://regex.alf.nu/
+
+Warmup:
+foo
+
+Anchors:
+
+
+Ranges:
+
+
+Backrefs:
+(.{3}).*\1
+
+Abba:
+
+
+A man, a plan:
+(.)(.).*\2\1$
+
+Prime:
+
+
+Four:
+
+
+Order:
+
+
+Triples:
+
+
+Glob:
+
+
+Balance:
+
+
+Powers:
+
+
+Long count:
+
+
+Alphabetical:
+
+
+Powers 2:
+
