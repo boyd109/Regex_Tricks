@@ -1,6 +1,10 @@
 () in whatever to keep, and in replace use \1
 Number is where the brackets go (lookahead and lookbehind don't count)
 
+(?s)
++ for 1 occurance or more
+* for 0 occurance or more
+
 something{#,} is looking for # occurences of something
 
 something(?=) it is true that it is preceded by what is after the ?=
@@ -10,7 +14,7 @@ something(?!) it is false that it is preceded by what is after the ?!
 
 something* looks for something and something with multiple occurances (last digit is quantified, and can be 0 occurances)
 
-# Code:
+Code:
 
 This looks for files with multiple subfolders to the path
 http://www.website.com/[a-z]+/[a-z]+/[a-z]+/[a-z]+/[a-z]+/([a-z]+).pdf
