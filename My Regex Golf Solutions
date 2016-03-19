@@ -6,8 +6,8 @@ foo
 Anchors: (206)
 ick$
 
-Ranges:
-
+Ranges: (106)
+(.).*\1
 
 Backrefs: (200)
 (.{3}).*\1
