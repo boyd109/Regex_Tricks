@@ -26,8 +26,14 @@ Getting half the right half of a two column table when it has a break in the sec
 F: (?s)(?<=</td>)+.<td.+?</td>
 R: (nothing. The right side will be deleted)
 
-Looks for link only:
+Looks for links on their own line:
 F: http:.+
+R: (This highlights all the links)
+
+OR
+
+F: .+(?=http:)
+R: (This highlights everyhing before the links)
 
 Removing hyperlinks from <a> tags
 (?<=<td>).+?">
