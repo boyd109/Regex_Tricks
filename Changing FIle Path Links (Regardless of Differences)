@@ -1,5 +1,5 @@
 Only pdf extensions: (Greedy, so it allows for .pdf in name)
-F: (?<=<a href=")(.+)/(.+\.pdf)
+F: (?<=href=")(.+)/(.+\.pdf)
 R: path\2
 
 For Pictures: (With extensions jpg, png, gif)
