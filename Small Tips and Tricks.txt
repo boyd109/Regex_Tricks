@@ -5,14 +5,15 @@ Number is where the brackets go (lookahead and lookbehind don't count)
 + for 1 occurance or more
 * for 0 occurance or more
 
-something{#,} is looking for # occurences of something
+a{#,} is looking for # occurences of a
 
-something(?=) it is true that it is preceded by what is after the ?=
-something(?!) it is false that it is preceded by what is after the ?!
-(?<=)something it is true that whatever is in ?<= is before something
-(?!=)something it is false that whatever is in ?!= is before something
+a(?=b) it is true that a is before b
+a(?!b) it is false that a is before b
+(?<=b)a it is true that b is before a
+(?!=b)a it is false that b is before a
 
-something* looks for something and something with multiple occurances (last digit is quantified, and can be 0 occurances)
++ for 1 occurance or more
+* for 0 occurance or more
 
 Code:
 
