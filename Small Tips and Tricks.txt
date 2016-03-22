@@ -45,3 +45,7 @@ any number with decimals, scientific notation, etc.
 ^-?\d+(,\d+)*(\.\d+(e\d+)?)?$ 
 any name with periods:
 ^([\w\.]*)
+files with certain extentions:
+(\w+)\.(png|gif|jpg)$
+if then:
+(?(A)X|Y)
