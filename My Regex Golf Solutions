@@ -3,11 +3,11 @@ Link: http://regex.alf.nu/
 Warmup: (207)
 foo
 
-Anchors: (206)
+Anchors: (208)
 k$
 
-Ranges: (106)
-(.).*\1
+Ranges: (202)
+^[a-f]*$
 
 Backrefs: (200)
 (.{3}).*\1
