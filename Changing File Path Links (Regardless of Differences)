@@ -8,6 +8,9 @@ R: path\2
 
 Where the "path" is the new filepath.
 
+Problems:
+- the img or href tags need to be separated by a new line
+
 Changes:
 <p><a href="oldpath213/15-16%20SY%20Calendar%202.pdf.pdf">2015-16 School Calendar</a></p>
 <p><a href="oldpath1/ElemBellSched.pdf">Bell Schedule</a></p>
