@@ -1,3 +1,27 @@
+# Newer Revision (For images):
+
+F: (<img[^>]*?src=['"]).*?\/([^.\/<>]*\.(png|gif|jpg|jpeg))(['"][^><]*?\/>)
+R: \1#\2\4
+
+where "#" is the filepath
+
+# Changes:
+<td><img class='hello' src='http://www.example.com/images/items/myitem.png' alt='My Item'/>
+    <img class='hello' src='http://www.example.com/images/items/myitem.png' alt='My Item'/><img class='hello' src='http://www.example.com/images/items/myitem.png' alt='My Item'/>
+</td>
+
+# Into: 
+<td><img class='hello' src='#myitem.png' alt='My Item'/>
+    <img class='hello' src='#myitem.png' alt='My Item'/><img class='hello' src='#myitem.png' alt='My Item'/>
+</td>
+
+# Fixed:
+- now works with tags in the img-tag and lines not separated by a break.
+
+
+
+# OLD
+
 Only pdf extensions: (Greedy, so it allows for .pdf in name)
 F: (?<=href=")(.+)/(.+\.pdf)
 R: path\2
