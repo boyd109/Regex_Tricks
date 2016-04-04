@@ -46,3 +46,12 @@ To:
 <p><a href="path/ElemBellSched.pdf">Bell Schedule</a></p>
 <p><a href="path/FAQ_DressCode.pdf">Dress Code</a></p>
 <p><a href="facebook.com/10920">Facebook</a></p>
+
+Doesn't work:
+(?<=src=").+(?=\w+)(\w+.jpg|png|gif)
+(?<=src=").+(?=\w+)(?!=[\<|\>])(\w+\.jpg|png|gif)
+
+Adapted From:
+Find: (<a[^>]*href=")[^"]*("[^>]*>)
+Replace: $1#$2
+
