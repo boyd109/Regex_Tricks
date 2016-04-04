@@ -26,15 +26,17 @@ Problems, keep in mind:
 - the text must be between the initial <p> and <a> tags before the link
 - the link cannot be on it's own line (The <p> tag of text will be closed)
 
-Example: (you don't want this) 
+Example: (you don't want this)
+```html
 <p>2015 School Calendar</p>
 <a href="link/15-16%20SY%20Calendar%202.pdf.pdf">link/15-16%20SY%20Calendar%202.pdf.pdf
 </a>
-
+```
 You want:
+```html
 <p>2015 School Calendar 
 <a href="link/15-16%20SY%20Calendar%202.pdf.pdf">link/15-16%20SY%20Calendar%202.pdf.pdf
 </a></p>
-
+```
 - don't want text after the </a> tag and before the next <p> tag (just annoying. Delete in rare occurences) 
 
