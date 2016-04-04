@@ -6,9 +6,10 @@ R: \1#\2\4
 where "#" is the filepath
 
 # Changes:
+[comment]: <> (
 <td><img class='hello' src='http://www.example.com/images/items/myitem.png' alt='My Item'/>
     <img class='hello' src='http://www.example.com/images/items/myitem.png' alt='My Item'/><img class='hello' src='http://www.example.com/images/items/myitem.png' alt='My Item'/>
-</td>
+</td> )
 
 # Into: 
 <td><img class='hello' src='#myitem.png' alt='My Item'/>
