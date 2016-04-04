@@ -1,11 +1,13 @@
 This removes the <a> tag from a table that contains it in each cell (<td>)
 
 F: (?<=<td>).+?">
+<br>
 R: (None)
 
 Example:
 
 From:
+```html
 <table border="0" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
@@ -31,8 +33,10 @@ From:
 </tr>
 </tbody>
 </table>
+```
 
 To:
+```html
 <table border="0" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
@@ -58,3 +62,4 @@ To:
 </tr>
 </tbody>
 </table>
+```html
