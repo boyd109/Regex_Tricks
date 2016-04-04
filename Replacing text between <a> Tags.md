@@ -1,4 +1,6 @@
+```html
 Replacing something that is the text of an <a> tag with <p> tag
+```
 F: <p>(.+?)<a href="(.+?)">(.+?)</a></p>
 <br>
 R: <p><a href="\2">\1</a></p>
