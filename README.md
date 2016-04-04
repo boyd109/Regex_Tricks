@@ -6,6 +6,5 @@ Current list of tricks:
 
 - replacing file path with a new file path for images (complete)
 - splitting tables into two different columns
-- 
 
 more to come
