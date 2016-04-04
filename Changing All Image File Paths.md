@@ -1,6 +1,6 @@
 # Newer Revision (For images):
 
-F: (src=['"]).*?\/([^.\/<>]*\.(png|gif|jpg|jpeg))
+F: (src=['"]).*?\/([^\/<>]*\.(png|gif|jpg|jpeg))
 <br>
 R: \1#\2\4
 
