@@ -1,6 +1,7 @@
 # Newer Revision (For images):
 
 F: (<img[^>]*?src=['"]).*?\/([^.\/<>]*\.(png|gif|jpg|jpeg))(['"][^><]*?\/>)
+<br>
 R: \1#\2\4
 
 where "#" is the filepath
