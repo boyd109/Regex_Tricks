@@ -1,8 +1,11 @@
+```html
 Getting half the right half of a two column table when it has a break in the second cell of each row:
 F: (?s)(?<=</td>)+.<td.+?</td>
 R: (nothing. The right side will be deleted)
+```
 
 From:
+```html
 <table>
 <tbody>
 <tr>
@@ -72,8 +75,9 @@ From:
 </tbody>
 </table>
 <p>&nbsp;</p>
-
+```
 To:
+```html
 <table>
 <tbody>
 <tr>
@@ -119,3 +123,4 @@ To:
 </tbody>
 </table>
 <p>&nbsp;</p>
+```
