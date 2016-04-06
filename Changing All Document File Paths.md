@@ -1,5 +1,5 @@
+# Newer Revision (For images):
 
-```html
 (href=['"]).*?\/([^\/<>]*\.(pdf|doc|docx))
 \1#\2\4
-```
+
