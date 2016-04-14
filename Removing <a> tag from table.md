@@ -2,7 +2,6 @@ This removes the <a> tag from a table that contains it in each cell (<td>)
 ```
 F: (?<=<td>).+?">
 ```
-<br>
 ```
 R: (None)
 ```
