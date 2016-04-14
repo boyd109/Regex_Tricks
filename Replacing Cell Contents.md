@@ -1,8 +1,11 @@
 #Replacing the rightmost cell of a six column table with the contents of the first column.
 
+```
 F:(?s)(?<=<tr>)(.+?<td>)(.+?)(</td>\s+?[\w\<\>&;\/]+\s+?[\w\<\>&;\/]+\s+?[\w\<\>&;\/]+\s+?[\w\<\>&;\/]+\s+?\s+?)(<td>)(.+?)(</td>)
-<br>
+```
+```
 R:\1\2\3\4\2\5\6
+```
 
 Changes:
 ```html
