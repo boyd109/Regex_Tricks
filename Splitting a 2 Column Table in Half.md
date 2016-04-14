@@ -1,6 +1,10 @@
-```html
+```
 Getting half the right half of a two column table when it has a break in the second cell of each row:
+```
+```
 F: (?s)(?<=</td>)+.<td.+?</td>
+```
+```
 R: (nothing. The right side will be deleted)
 ```
 
