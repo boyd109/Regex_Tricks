@@ -8,7 +8,7 @@ where "#" is the filepath
 
 # Changes:
 ```html
-<td><img class='hello' src='http://www.example.com/images/items/myitem.png' alt='My Item'/>
+<td><img class='hello' src='http://www.changedsitename.com/images/items/myitem.png' alt='My Item'/>
     <img class='hello' src='http://www.example.com/images/items/myitem.png' alt='My Item'/><img class='hello' src='http://www.example.com/images/items/myitem.png' alt='My Item'/>
 </td>
 ```
